@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/tous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btc_any"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/tous_les_monstres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Liste des monstres"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/tous"
+        app:layout_constraintTop_toTopOf="@+id/tous"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_dark"
+        app:layout_constraintTop_toTopOf="@+id/tous"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/tyrannoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Tyrannoking"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/dark"
+        app:layout_constraintTop_toTopOf="@+id/dark"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_earth"
+        app:layout_constraintTop_toTopOf="@+id/dark"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/rockilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Rockilla"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/earth"
+        app:layout_constraintTop_toTopOf="@+id/earth"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_fire"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/earth"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:id="@+id/fire_lion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Fire Lion"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/fire"
+        app:layout_constraintTop_toTopOf="@+id/fire"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:id="@+id/legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_legend"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/fire"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/arch_knight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Arch Knight"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/legend"
+        app:layout_constraintTop_toTopOf="@+id/legend"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/legend"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/light_spirit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Light Spirit"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/light"
+        app:layout_constraintTop_toTopOf="@+id/light"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:id="@+id/magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_magic"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/light"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/genie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Genie"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/magic"
+        app:layout_constraintTop_toTopOf="@+id/magic"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+
+
+    <ImageView
+        android:id="@+id/metal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_metal"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/magic"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/metalsaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Metalsaur"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/metal"
+        app:layout_constraintTop_toTopOf="@+id/metal"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+
+    <ImageView
+        android:id="@+id/nature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_nature"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/metal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/panda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Panda"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/nature"
+        app:layout_constraintTop_toTopOf="@+id/nature"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_thunder"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/nature"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/thunder_eagle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Thunder Eagle"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/thunder"
+        app:layout_constraintTop_toTopOf="@+id/thunder"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bte_water"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/thunder"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/turtle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Turtle"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/water"
+        app:layout_constraintTop_toTopOf="@+id/water"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp" />
+
+</android.support.constraint.ConstraintLayout>

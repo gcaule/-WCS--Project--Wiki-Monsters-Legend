@@ -6,4 +6,5 @@
     <string name="stat_power">Power value</string>
     <string name="stat_speed">Speed value</string>
     <string name="stat_stamina">Stamina value</string>
+    <string name="logo">logo</string>
 </resources>
