@@ -2,9 +2,9 @@
     <string name="app_name">Wiki Monster Legends</string>
     <string name="name_monster">Name Monster</string>
     <string name="element_monster">Element</string>
-    <string name="stat_life">Life value</string>
-    <string name="stat_power">Power value</string>
-    <string name="stat_speed">Speed value</string>
-    <string name="stat_stamina">Stamina value</string>
+    <string name="stat_life">000</string>
+    <string name="stat_power">000</string>
+    <string name="stat_speed">000</string>
+    <string name="stat_stamina">000</string>
     <string name="logo">logo</string>
 </resources>
