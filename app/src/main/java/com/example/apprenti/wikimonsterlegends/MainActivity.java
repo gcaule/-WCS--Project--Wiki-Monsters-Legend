@@ -24,16 +24,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button retourAccueil = (Button) findViewById(R.id.button);
-        retourAccueil.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SelectMonsterDetails.class);
-                startActivity(intent);
-            }
-        });
-
         mListView = (ListView) findViewById(R.id.liste_deroulante);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
