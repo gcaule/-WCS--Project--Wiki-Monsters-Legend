@@ -4,43 +4,39 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.apprenti.wikimonsterlegends.R.id.liste_deroulante;
+
 public class MainActivity extends ActionBarActivity {
 
     private ListView mListView;
-    private String[] listeMonstres = new String[]{
-            "Tyrannoking", "Rockilla", "Fire Lion", "Arch Knight", "Light Spirit", "Genie",
-            "Metalsaur", "Panda", "Thunder Eagle", "Turtle"
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mListView = (ListView) findViewById(R.id.liste_deroulante);
+        mListView = (ListView) findViewById(liste_deroulante);
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
-                android.R.layout.simple_list_item_1, listeMonstres);
-        mListView.setAdapter(adapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this, SelectMonsterDetails.class);
+                intent.putExtra("streum", i);
+                startActivity(intent);
+            }
+        });
 
-    afficherListeTweets();
-}
-
-    private void afficherListeNoms(){
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, listeMonstres);
-        mListView.setAdapter(adapter);
+        afficherListeTweets();
     }
 
     private List<Tweet> genererTweets(){
-        List<Tweet> tweets = new ArrayList<Tweet>();
+        List<Tweet> tweets = new ArrayList<>();
         tweets.add(new Tweet(R.drawable.bte_dark, "Tyrannoking", "Elément 'Dark'"));
         tweets.add(new Tweet(R.drawable.bte_earth, "Rockilla", "Elément 'Earth'"));
         tweets.add(new Tweet(R.drawable.bte_fire, "Fire Lion", "Elément 'Fire'"));

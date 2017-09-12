@@ -11,43 +11,43 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by apprenti on 08/09/17.
+ * Code: il faut franchir les maquignons.
  */
 
-    public class TweetAdapter extends ArrayAdapter<Tweet> {
+public class TweetAdapter extends ArrayAdapter<Tweet> {
 
-        public TweetAdapter(Context context, List<Tweet> tweets) {
-            super(context, 0, tweets);
+    public TweetAdapter(Context context, List<Tweet> tweets) {
+        super(context, 0, tweets);
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        if(convertView == null){
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.tweet_monstre,parent, false);
         }
 
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-
-            if(convertView == null){
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.tweet_monstre,parent, false);
-            }
-
-            TweetViewHolder viewHolder = (TweetViewHolder) convertView.getTag();
-            if(viewHolder == null){
-                viewHolder = new TweetViewHolder();
-                viewHolder.pseudo = (TextView) convertView.findViewById(R.id.pseudo);
-                viewHolder.text = (TextView) convertView.findViewById(R.id.text);
-                viewHolder.avatar = (ImageView) convertView.findViewById(R.id.avatar);
-                convertView.setTag(viewHolder);
-            }
-
-            Tweet tweet = getItem(position);
-            viewHolder.pseudo.setText(tweet.getPseudo());
-            viewHolder.text.setText(tweet.getText());
-            viewHolder.avatar.setImageResource(tweet.getAvatar());
-
-            return convertView;
+        TweetViewHolder viewHolder = (TweetViewHolder) convertView.getTag();
+        if(viewHolder == null){
+            viewHolder = new TweetViewHolder();
+            viewHolder.pseudo = convertView.findViewById(R.id.pseudo);
+            viewHolder.text = convertView.findViewById(R.id.text);
+            viewHolder.avatar = convertView.findViewById(R.id.avatar);
+            convertView.setTag(viewHolder);
         }
 
-        private class TweetViewHolder{
-            public TextView pseudo;
-            public TextView text;
-            public ImageView avatar;
+        Tweet tweet = getItem(position);
+        viewHolder.pseudo.setText(tweet.getPseudo());
+        viewHolder.text.setText(tweet.getText());
+        viewHolder.avatar.setImageResource(tweet.getAvatar());
 
-        }
+        return convertView;
+    }
+
+    private class TweetViewHolder{
+        public TextView pseudo;
+        public TextView text;
+        public ImageView avatar;
+
+    }
 }

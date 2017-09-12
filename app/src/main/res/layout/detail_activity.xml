@@ -64,13 +64,13 @@
                         app:srcCompat="@drawable/d" />
 
                     <TextView
-                        android:id="@+id/element_monster_img"
+                        android:id="@+id/element_monster"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:text="@string/element_monster"
-                        android:textAllCaps="true"
+                        android:textAllCaps="false"
                         android:textSize="16sp"
                         app:layout_constraintHorizontal_bias="0.516"
                         app:layout_constraintLeft_toRightOf="@+id/image_monster"

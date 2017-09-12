@@ -19,23 +19,12 @@ public class Tweet {
         return avatar;
     }
 
-    public void setAvatar(int avatar) {
-        this.avatar = avatar;
-    }
-
     public String getPseudo() {
         return pseudo;
-    }
-
-    public void setPseudo(String pseudo) {
-        this.pseudo = pseudo;
     }
 
     public String getText() {
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
 }
