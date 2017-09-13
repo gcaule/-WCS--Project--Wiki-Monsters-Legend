@@ -8,14 +8,26 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 public class SelectMonsterDetails extends AppCompatActivity {
+
+    int streum;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_activity);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
-        int streum = getIntent().getIntExtra("streum", 0);
+        streum = getIntent().getIntExtra("streum", 0);
+        Button button_suiv = (Button)findViewById(R.id.button_suiv);
+        Button button_prec = (Button)findViewById(R.id.button_prec);
+        if (streum == 0) {
+            button_prec.setEnabled(false);
+        }
+        else if (streum == 9){
+            button_suiv.setEnabled(false);
+        }
 
         ImageView image_monster = (ImageView) findViewById(R.id.image_monster);
         TextView name_monster = (TextView) findViewById(R.id.name_monster);
@@ -182,6 +194,17 @@ public class SelectMonsterDetails extends AppCompatActivity {
 
         }
 
+        Button prec = (Button)findViewById(R.id.button_prec);
+        prec.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelectMonsterDetails.this, SelectMonsterDetails.class);
+                intent.putExtra("streum", streum-1);
+                startActivity(intent);
+            }
+        });
+
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
 
@@ -191,5 +214,19 @@ public class SelectMonsterDetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button suiv = (Button)findViewById(R.id.button_suiv);
+        suiv.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(SelectMonsterDetails.this, SelectMonsterDetails.class);
+                intent.putExtra("streum", streum+1);
+                startActivity(intent);
+
+            }
+        });
+
     }
 }
