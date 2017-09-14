@@ -38,16 +38,16 @@ public class MainActivity extends ActionBarActivity {
 
     private List<Tweet> genererTweets(){
         List<Tweet> tweets = new ArrayList<>();
-        tweets.add(new Tweet(R.drawable.bte_dark, "Tyrannoking", "Elément 'Dark'"));
-        tweets.add(new Tweet(R.drawable.bte_earth, "Rockilla", "Elément 'Earth'"));
-        tweets.add(new Tweet(R.drawable.bte_fire, "Fire Lion", "Elément 'Fire'"));
-        tweets.add(new Tweet(R.drawable.bte_legend, "Arch Knight", "Elément 'Legend'"));
-        tweets.add(new Tweet(R.drawable.bte_light, "Light Spirit", "Elément 'Light'"));
-        tweets.add(new Tweet(R.drawable.bte_magic, "Genie", "Elément 'Magic'"));
-        tweets.add(new Tweet(R.drawable.bte_metal, "Metalsaur", "Elément 'Metal'"));
-        tweets.add(new Tweet(R.drawable.bte_nature, "Panda", "Elément 'Nature'"));
-        tweets.add(new Tweet(R.drawable.bte_thunder, "Thunder Eagle", "Elément 'Thunder'"));
-        tweets.add(new Tweet(R.drawable.bte_water, "Thunder", "Elément 'Water'"));
+        tweets.add(new Tweet(R.drawable.bte_dark, "Tyrannoking", "Dark Element"));
+        tweets.add(new Tweet(R.drawable.bte_earth, "Rockilla", "Earth Element"));
+        tweets.add(new Tweet(R.drawable.bte_fire, "Fire Lion", "Fire Element"));
+        tweets.add(new Tweet(R.drawable.bte_legend, "Arch Knight", "Legend Element"));
+        tweets.add(new Tweet(R.drawable.bte_light, "Light Spirit", "Light Element"));
+        tweets.add(new Tweet(R.drawable.bte_magic, "Genie", "Magic Element"));
+        tweets.add(new Tweet(R.drawable.bte_metal, "Metalsaur", "Metal Element"));
+        tweets.add(new Tweet(R.drawable.bte_nature, "Panda", "Nature Element"));
+        tweets.add(new Tweet(R.drawable.bte_thunder, "Thunder Eagle", "Thunder Element"));
+        tweets.add(new Tweet(R.drawable.bte_water, "Thunder", "Water Element"));
         return tweets;
     }
 

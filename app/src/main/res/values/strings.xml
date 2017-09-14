@@ -10,4 +10,6 @@
     <string name="prec">Previous\nmonster</string>
     <string name="suiv">Next\nmonster</string>
     <string name="back">Back to list</string>
+    <string name="skills">Monster\'s Skills (Level 0)</string>
+    <string name="evolution">Monster\'s Evolution</string>
 </resources>

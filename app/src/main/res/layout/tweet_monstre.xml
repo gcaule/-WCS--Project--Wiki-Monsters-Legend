@@ -12,28 +12,30 @@ android:padding="10dp">
     tools:background="#AAA"
     />
 
-<TextView
-    android:id="@+id/pseudo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textColor="@android:color/black"
-    android:layout_marginLeft="10dp"
-    android:layout_toRightOf="@+id/avatar"
-    android:layout_alignTop="@+id/avatar"
-    android:textStyle="bold"
-    tools:text="Pseudo"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="Pseudo" />
 
-<TextView
-    android:id="@+id/text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textColor="@android:color/black"
-    android:layout_alignLeft="@+id/pseudo"
-    android:layout_below="@+id/pseudo"
-    tools:text="Texte de mon tweet"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pseudo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pseudo"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        tools:text="Texte de mon tweet" />
 
 </RelativeLayout>
