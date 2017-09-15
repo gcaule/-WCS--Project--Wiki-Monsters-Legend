@@ -22,7 +22,8 @@
         <activity android:name=".MainActivity"/>
         <activity
             android:name=".SelectMonsterDetails"
-            android:label="Monster Details" />
+            android:label="Monster Details"
+            android:noHistory="true"/>
 
 
     </application>
