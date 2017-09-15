@@ -12,4 +12,9 @@
     <string name="back">Back to list</string>
     <string name="skills">Monster\'s Skills (Level 0)</string>
     <string name="evolution">Monster\'s Evolution</string>
+    <string name="powerToast">Power Stat</string>
+    <string name="lifeToast">Life Stat</string>
+    <string name="speedToast">Speed Stat</string>
+    <string name="staminaToast">Stamina Stat</string>
+
 </resources>
