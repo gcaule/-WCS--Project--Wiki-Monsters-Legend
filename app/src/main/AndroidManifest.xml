@@ -24,8 +24,7 @@
         <activity
             android:name=".SelectMonsterDetails"
             android:label="Monster's Details" />
-
-
+            android:noHistory="true"/>
     </application>
 
 </manifest>

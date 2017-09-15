@@ -1,7 +1,7 @@
 package com.example.apprenti.wikimonsterlegends;
 
 /**
- * Created by apprenti on 08/09/17.
+ * Code: le Poisson a sauté de la Poêle.
  */
 
 public class Tweet {
