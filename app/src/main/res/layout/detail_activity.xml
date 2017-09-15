@@ -307,7 +307,7 @@
                     android:gravity="center"
                     android:text="Level 0"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/egg"
@@ -345,7 +345,7 @@
                     android:gravity="center"
                     android:text="Level 1-3"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/etape1"
@@ -383,7 +383,7 @@
                     android:gravity="center"
                     android:text="Level 4-24"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/etape2"
@@ -421,7 +421,7 @@
                     android:gravity="center"
                     android:text="Level 25-100"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/etape3"

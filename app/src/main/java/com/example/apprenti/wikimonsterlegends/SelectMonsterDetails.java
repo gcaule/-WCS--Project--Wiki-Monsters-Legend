@@ -1,13 +1,15 @@
 package com.example.apprenti.wikimonsterlegends;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 public class SelectMonsterDetails extends AppCompatActivity {
 
@@ -18,6 +20,50 @@ public class SelectMonsterDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_activity);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+        ImageView statLife = (ImageView) findViewById(R.id.stat_life_img);
+        statLife.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, R.string.lifeToast, duration);
+                toast.setGravity(Gravity.LEFT, 210, 0);
+                toast.show();
+            }
+        });
+
+        ImageView statPower = (ImageView) findViewById(R.id.stat_power_img);
+        statPower.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, R.string.powerToast, duration);
+                toast.setGravity(Gravity.LEFT, 10, 0);
+                toast.show();
+            }
+        });
+
+        ImageView statSpeed = (ImageView) findViewById(R.id.stat_speed_img);
+        statSpeed.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, R.string.speedToast, duration);
+                toast.setGravity(Gravity.RIGHT,210, 0);
+                toast.show();
+            }
+        });
+
+        ImageView statStamina = (ImageView) findViewById(R.id.stat_stamina_img);
+        statStamina.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_LONG;
+                Toast toast = Toast.makeText(context, R.string.staminaToast, duration);
+                toast.setGravity(Gravity.RIGHT, 0, 0);
+                toast.show();
+            }
+        });
 
         streum = getIntent().getIntExtra("streum", 0);
         Button button_suiv = (Button)findViewById(R.id.button_suiv);
