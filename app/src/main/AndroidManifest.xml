@@ -23,7 +23,7 @@
                   android:label="Select Your Monster"/>
         <activity
             android:name=".SelectMonsterDetails"
-            android:label="Monster's Details" />
+            android:label="Monster's Details"
             android:noHistory="true"/>
     </application>
 
