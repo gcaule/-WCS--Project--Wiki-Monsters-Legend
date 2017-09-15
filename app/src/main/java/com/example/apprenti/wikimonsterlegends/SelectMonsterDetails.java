@@ -25,9 +25,9 @@ public class SelectMonsterDetails extends AppCompatActivity {
         statLife.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                int duration = Toast.LENGTH_LONG;
+                int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, R.string.lifeToast, duration);
-                toast.setGravity(Gravity.LEFT, 210, 0);
+                toast.setGravity(Gravity.LEFT, 180, 50);
                 toast.show();
             }
         });
@@ -36,9 +36,9 @@ public class SelectMonsterDetails extends AppCompatActivity {
         statPower.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                int duration = Toast.LENGTH_LONG;
+                int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, R.string.powerToast, duration);
-                toast.setGravity(Gravity.LEFT, 10, 0);
+                toast.setGravity(Gravity.LEFT, 10, 50);
                 toast.show();
             }
         });
@@ -47,9 +47,9 @@ public class SelectMonsterDetails extends AppCompatActivity {
         statSpeed.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                int duration = Toast.LENGTH_LONG;
+                int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, R.string.speedToast, duration);
-                toast.setGravity(Gravity.RIGHT,210, 0);
+                toast.setGravity(Gravity.RIGHT,180, 50);
                 toast.show();
             }
         });
@@ -58,9 +58,9 @@ public class SelectMonsterDetails extends AppCompatActivity {
         statStamina.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                int duration = Toast.LENGTH_LONG;
+                int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, R.string.staminaToast, duration);
-                toast.setGravity(Gravity.RIGHT, 0, 0);
+                toast.setGravity(Gravity.RIGHT, 0, 50);
                 toast.show();
             }
         });

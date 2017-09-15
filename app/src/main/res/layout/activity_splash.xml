@@ -16,16 +16,16 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="139dp"
         android:indeterminate="false"
         android:max="100"
         android:padding="15dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="5dp"
-        android:progressTint="@android:color/holo_orange_dark"></ProgressBar>
+        android:progressTint="@android:color/holo_orange_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ProgressBar>
 
 </RelativeLayout>
